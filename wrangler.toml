@@ -1,0 +1,23 @@
+name = "cheapdealsproject"
+main = ".svelte-kit/cloudflare/_worker.js"
+compatibility_date = "2023-10-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Modern assets configuration (replacing the older site configuration)
+[assets]
+bucket = ".svelte-kit/cloudflare"
+binding = "ASSETS"
+
+# Pages configuration
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Database configuration
+[[d1_databases]]
+binding = "DB"
+database_name = "cheapdatabase"
+database_id = "f20eba92-6fdc-416e-b9a9-20c54962ea78"
+
+# KV namespace configuration
+[[kv_namespaces]]
+binding = "CACHE"
+id = "2da6e168c7194ce189d65b39c5fc5890"
